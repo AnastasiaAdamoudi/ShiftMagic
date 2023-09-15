@@ -29,6 +29,8 @@ mongoose.connect(mongoUri, {
 app.use('/auth', shiftWizardRouter);
 app.use('/auth/users', shiftWizardRouter);
 app.use('/auth/register', shiftWizardRouter);
+app.use('/auth/login', shiftWizardRouter);
+app.use('/auth/logout', shiftWizardRouter);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

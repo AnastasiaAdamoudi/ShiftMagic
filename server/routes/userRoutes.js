@@ -7,8 +7,8 @@ import * as userControllers from '../controllers/userControllers.js';
 const shiftWizardRouter = express.Router();
 
 shiftWizardRouter.get('/users', userControllers.getUsers);
-shiftWizardRouter.get('/login');
 shiftWizardRouter.post('/register', userControllers.registerUser);
-shiftWizardRouter.post('/logout');
+shiftWizardRouter.get('/login', userControllers.loginUser);
+shiftWizardRouter.post('/logout', userControllers.logoutUser);
 
 export { shiftWizardRouter };
