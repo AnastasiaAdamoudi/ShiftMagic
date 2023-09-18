@@ -28,9 +28,11 @@ export const theme = {
       button: "0px 4px 4px rgba(0, 0, 0, 0.25)"
     },
     screens: {
-      sm: '550px',
-      md: '750px',
-      lg: '1024px'
+      'xs': '485px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px'
     },
     backgroundImage: {
       "wizard-hat": "url('/src/assets/wizard-hat.png')",
