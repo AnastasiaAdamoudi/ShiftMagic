@@ -5,6 +5,7 @@ import CreateEmployeeForm from './components/employees/create-employee-form.js';
 import DisplayEmployees from './components/employees/display-employees.js';
 import EditEmployeeForm from './components/employees/edit-employee-form.js';
 import ShiftOptionsForm from './components/shifts/shift-options-form.js';
+import GuestCombinedForm from './components/guest/guest-combined-form.js';
 import DisplayShifts from './components/shifts/display-shifts.js';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/display-employees" element={<DisplayEmployees />} />
           <Route path="/edit-employee-form" element={<EditEmployeeForm />} />
           <Route path="/shift-options-form" element={<ShiftOptionsForm />} />
+          <Route path="/guest-combined-form" element={<GuestCombinedForm />} />
           <Route path="/display-shifts" element={<DisplayShifts />} />
         </Routes>
       </Router>
