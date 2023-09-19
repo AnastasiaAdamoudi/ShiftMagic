@@ -1,17 +1,19 @@
-import { Link } from 'react-router-dom';
+import magicHand from '../../assets/magicHand.png';
 
 function About() {
   return (
-    <div className='bg-background2 relative h-screen w-full mx-auto flex items-center justify-center'>
-            <Link to='/'>
-            <button className='bg-secondaryT  hover:bg-tertiaryT mt-10 mr-5 font-links font-bold uppercase
-                              text-sm sm:text-md md:text-l lg:text-xl text-background2
-                              pt-2 pb-2 pl-14 pr-14 rounded-xl'
-                              >
-                              back to top
-            </button>
-            </Link>
-      </div>
+    <div className='bg-tertiaryT h-screen flex flex-col justify-center items-center'>
+      <img src={magicHand} alt='magic hand'
+           className='w-[260px] sm:w-[280px] md:w-[300px] lg:w-[320px] xl:w-[350px]
+                     mb-8 align-middle'
+                     />
+      <p className='text-background2 font-title font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center w-[80%] sm:w-[70%] md:w-[60%] lg:w-[60%] xl:w-[50%]'>
+        With user-friendly features, seamless integration, and robust support,
+        Shift Wizard is here to streamline your scheduling needs.
+        Say goodbye to scheduling headaches and hello to optimized productivity.
+        Elevate your workforce management with this app today!
+      </p>
+    </div>
   )
 }
 

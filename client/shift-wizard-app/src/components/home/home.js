@@ -1,5 +1,6 @@
 import LandingPage from './landing-page';
 import About from './about';
+import Paths from './paths';
 import Contact from './contact';
 import ShiWiLogo from '../../assets/ShiWiLogo2.png';
 import { Link } from 'react-router-dom';
@@ -12,6 +13,7 @@ function Home() {
       </Link>
       <LandingPage />
       <About />
+      <Paths />
       <Contact />
     </div>
   )
