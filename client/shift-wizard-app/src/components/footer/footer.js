@@ -6,7 +6,7 @@ function Footer() {
     <div className='bg-tertiaryT flex flex-col items-center justify-center h-full'>
       <Link to='/' className='text-center no-underline'>
         <img src={ShiWiLogo} alt='logo' className='mt-3 w-[100px] mx-auto' />
-        <h3 className='text-primaryT font-title font-bold text-md'>Shift Wizard</h3>
+        <h3 className='text-primaryT font-title font-bold text-md'>Shift Magic</h3>
       </Link>
       <p className='text-background2 font-body font-bold text-md mt-0.1'>
         Copyright<span className='text-primaryT font-links font-bold text-md mx-2'>©</span>2023 Anastasia Adamoudi

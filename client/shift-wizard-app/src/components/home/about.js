@@ -9,7 +9,7 @@ function About() {
                      />
       <p className='text-background2 font-title font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center w-[80%] sm:w-[70%] md:w-[60%] lg:w-[60%] xl:w-[50%]'>
         With user-friendly features, seamless integration, and robust support,
-        Shift Wizard is here to streamline your scheduling needs.
+        Shift Magic is here to streamline your scheduling needs.
         Say goodbye to scheduling headaches and hello to optimized productivity.
         Elevate your workforce management with this app today!
       </p>

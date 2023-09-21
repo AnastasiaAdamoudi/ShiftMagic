@@ -32,7 +32,7 @@ function LandingPage() {
                         text-[80px] sm:text-[100px] md:text-[120px] lg:text-[140px] xl:text-[160px]'
                         style={{ textShadow: '2px 2px 10px rgba(0, 0, 0, 5)' }}
                         >
-                        Shift Wizard
+                        Shift Magic
           </h1>
           <h2 className='text-background2 font-body font-bold
                         text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
