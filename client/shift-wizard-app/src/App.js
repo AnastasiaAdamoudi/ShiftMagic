@@ -19,9 +19,11 @@ function App() {
           <Route path="/create-employee-form" element={<CreateEmployeeForm />} />
           <Route path="/display-employees" element={<DisplayEmployees />} />
           <Route path="/edit-employee-form" element={<EditEmployeeForm />} />
-          <Route path="/shift-options-form" element={<ShiftOptionsForm />} />
+          <Route path="/display-weekly-shifts" element={<DisplayWeeklyShifts />} />
+          <Route path="/edit-shifts" element={<EditShiftsForm />} />
+          <Route path="/generate-shifts" element={<GenerateShiftsForm />} />
+          <Route path="/show-generated-shifts" element={<ShowGeneratedShifts />} />
           <Route path="/guest-combined-form" element={<GuestCombinedForm />} />
-          <Route path="/display-shifts" element={<DisplayShifts />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
