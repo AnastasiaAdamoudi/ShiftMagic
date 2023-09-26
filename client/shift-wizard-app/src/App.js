@@ -7,6 +7,7 @@ import EditEmployeeForm from './components/employees/edit-employee-form.js';
 import ShiftOptionsForm from './components/shifts/shift-options-form.js';
 import GuestCombinedForm from './components/guest/guest-combined-form.js';
 import DisplayShifts from './components/shifts/display-shifts.js';
+import Contact from './components/contact/contact.js';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/shift-options-form" element={<ShiftOptionsForm />} />
           <Route path="/guest-combined-form" element={<GuestCombinedForm />} />
           <Route path="/display-shifts" element={<DisplayShifts />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>
