@@ -25,4 +25,9 @@ shiftWizardRouter.delete('/weekly-working-employees/:employeeId', shiftControlle
 shiftWizardRouter.post('/daily-working-employees', shiftControllers.addDailyWorkingEmployees);
 shiftWizardRouter.delete('/daily-working-employees/:employeeId', shiftControllers.deleteDailyWorkingEmployees);
 
+shiftWizardRouter.post('/shifts', shiftControllers.generateShifts);
+shiftWizardRouter.get('/shifts', shiftControllers.getShifts);
+shiftWizardRouter.put('/shifts/:shiftId', shiftControllers.editShifts);
+shiftWizardRouter.delete('/shifts/:shiftId', shiftControllers.deleteShifts);
+
 export { shiftWizardRouter };
