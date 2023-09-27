@@ -5,6 +5,7 @@ import CreateEmployeeForm from './components/employees/create-employee-form.js';
 import DisplayEmployees from './components/employees/display-employees.js';
 import EditEmployeeForm from './components/employees/edit-employee-form.js';
 import DisplayWeeklyShifts from './components/shifts/display-weekly-shifts.js';
+import GuestCombinedForm from './components/guest/guest-combined-form.js';
 import UserHome from './components/users/user-home.js';
 import Contact from './components/contact/contact.js';
 
@@ -24,8 +25,8 @@ function App() {
           {/* <Route path="/display-weekly-shifts" element={<DisplayWeeklyShifts />} />
           <Route path="/edit-shifts" element={<EditShiftsForm />} />
           <Route path="/generate-shifts" element={<GenerateShiftsForm />} />
-          <Route path="/show-generated-shifts" element={<ShowGeneratedShifts />} /> 
-          <Route path="/guest-combined-form" element={<GuestCombinedForm />} />*/}
+          <Route path="/show-generated-shifts" element={<ShowGeneratedShifts />} /> */}
+          <Route path="/guest" element={<GuestCombinedForm />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>

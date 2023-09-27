@@ -1,12 +1,21 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useCookies } from "react-cookie";
 import ShiWiLogo from "../../assets/ShiWiLogo2.png";
 import menu from "../../assets/menu.svg";
 import close from "../../assets/close.svg";
 
-const Navbar = () => {
+function Navbar() {
   const [active, setActive] = useState("");
   const [mobile, setMobile] = useState(false);
+
+  const [cookies, setCookie, removeCookie] = useCookies(["access_token"]);
+  const navigate = useNavigate();
+
+  const logout = () => {
+    removeCookie("access_token", { path: "/" });
+    navigate("/");
+  };
 
   return (
     <nav className={"sticky top-0 z-50 bg-background1 shadow-xl"}>
@@ -14,16 +23,15 @@ const Navbar = () => {
         {/* beginning of flex div */}
         <div className="flex items-center justify-start">
           {/* beginning of left side div */}
-          <div className="ml-2 mr-2">
+          <div className="flex items-center gap-2 ml-2 mr-2">
             <Link
               to="/user-home"
-              className="flex items-center gap-2"
               onClick={() => {
                 setActive("");
                 window.scrollTo(0, 0);
               }}
             >
-              <img src={ShiWiLogo} alt="logo" className="w-20 md:w-30 h-auto" />
+              <img src={ShiWiLogo} alt="logo" className="w-[50px] md:w-[60px] h-auto" />
             </Link>
           </div>
           <div className="flex align-middle">
@@ -51,7 +59,7 @@ const Navbar = () => {
                   window.scrollTo(0, 0);
                 }}
               >
-                Display Employees
+                Employees
               </div>
             </Link>
             <Link to="/shift-options-form">
@@ -69,7 +77,7 @@ const Navbar = () => {
                   window.scrollTo(0, 0);
                 }}
               >
-                Shift Options Form
+                Shifts
               </div>
             </Link>
             <Link to="/">
@@ -86,9 +94,10 @@ const Navbar = () => {
                 onClick={() => {
                   setActive("logout");
                   window.scrollTo(0, 0);
+                  logout();
                 }}
               >
-                Logout
+                Login/Register
               </div>
             </Link>
           </div>
@@ -122,7 +131,7 @@ const Navbar = () => {
                       window.scrollTo(0, 0);
                     }}
                   >
-                    Display Employees
+                    Employees
                   </div>
                 </Link>
                 <Link to="/shift-options-form">
@@ -139,7 +148,7 @@ const Navbar = () => {
                       window.scrollTo(0, 0);
                     }}
                   >
-                    Shift Options Form
+                    Shifts
                   </div>
                 </Link>
                 <Link to="/">
@@ -154,9 +163,10 @@ const Navbar = () => {
                       setMobile(false);
                       setActive("logout");
                       window.scrollTo(0, 0);
+                      logout();
                     }}
                   >
-                    Logout
+                    Login/Register
                   </div>
                 </Link>
               </div>
@@ -170,6 +180,6 @@ const Navbar = () => {
       {/* end of flex div */}
     </nav>
   );
-};
+}
 
 export default Navbar;

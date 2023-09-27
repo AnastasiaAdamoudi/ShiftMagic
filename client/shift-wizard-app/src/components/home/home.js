@@ -3,15 +3,12 @@ import About from './about';
 import Paths from './paths';
 import ContactInfoDark from '../contact/contact-info-dark';
 import HomeFooter from '../footer/home-footer';
-import ShiWiLogo from '../../assets/ShiWiLogo2.png';
-import { Link } from 'react-router-dom';
+import Navbar from '../navbar/navbar';
 
 function Home() {
   return (
     <div className='bg-background1 absolute w-full'>
-      <Link to='/'>
-        <img src={ShiWiLogo} alt='logo' className='m-2 w-[100px]' />
-      </Link>
+      <Navbar />
       <LandingPage />
       <About />
       <Paths />

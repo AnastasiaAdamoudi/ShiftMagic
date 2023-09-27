@@ -9,34 +9,35 @@ function LandingPage() {
         <img
           src={wizardHat}
           alt='wizard hat'
-          className='absolute w-[250px] top-[-110%] align-middle
-                    sm:w-[300px] sm:top-[-115%] sm:align-middle
-                    md:w-[310px] md:right-[-3%] md:top-[-100%]
-                    lg:w-[320px] lg:right-[-1%] lg:top-[-90%]
-                    xl:w-[330px] xl:right-[1%] xl:top-[-85%]
+          className='absolute w-[250px] top-[-100%] align-middle
+                    sm:w-[300px] sm:top-[-60%] sm:align-middle
+                    md:w-[310px] md:right-[-3%] md:top-[-35%]
+                    lg:w-[320px] lg:right-[-1%] lg:top-[-23%]
+                    xl:w-[330px] xl:right-[1%] xl:top-[-20%]
                     z-1'
         />
         <img
           src={magic}
           alt='magic'
-          className='absolute w-[400px] top-[-40%] align-middle
-                    sm:w-[500px] sm:top-[-45%] sm:align-middle 
-                    md:w-[600px] md:right-[5%] md:top-[-57%]
-                    lg:w-[700px] lg:right-[5%] lg:top-[-65%]
-                    xl:w-[800px] xl:right-[2%] xl:top-[-70%]
+          className='absolute w-[400px] top-[-35%] align-middle
+                    sm:w-[500px] sm:top-[-25%] sm:align-middle 
+                    md:w-[600px] md:right-[5%] md:top-[-20%]
+                    lg:w-[700px] lg:right-[5%] lg:top-[-5%]
+                    xl:w-[800px] xl:right-[2%] xl:top-[-10%]
                     transform rotate-[-45deg] md:rotate-0
                     z-0'
         />
         <div className='text-center z-10'>
           <h1 className='text-primaryT font-title font-bold
-                        text-[80px] sm:text-[100px] md:text-[120px] lg:text-[140px] xl:text-[160px]'
+                        text-[80px] sm:text-[100px] md:text-[120px] lg:text-[140px] xl:text-[160px]
+                        xs:mt-2 sm:mt-20 md:mt-32 lg:mt-40 xl:mt-44'
                         style={{ textShadow: '2px 2px 10px rgba(0, 0, 0, 5)' }}
                         >
                         Shift Magic
           </h1>
           <h2 className='text-background2 font-body font-bold
                         text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
-                        uppercase'
+                        uppercase '
                         style={{ textShadow: '2px 2px 10px rgba(0, 0, 0, 5)' }}
                         >
                         Smooth employee scheduling
