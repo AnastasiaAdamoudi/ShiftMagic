@@ -16,7 +16,7 @@ const Navbar = () => {
           {/* beginning of left side div */}
           <div className="ml-2 mr-2">
             <Link
-              to="/"
+              to="/user-home"
               className="flex items-center gap-2"
               onClick={() => {
                 setActive("");

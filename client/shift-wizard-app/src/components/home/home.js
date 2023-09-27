@@ -1,8 +1,8 @@
 import LandingPage from './landing-page';
 import About from './about';
 import Paths from './paths';
-import Contact from '../contact/contact';
-import Footer from '../footer/footer';
+import ContactInfoDark from '../contact/contact-info-dark';
+import HomeFooter from '../footer/home-footer';
 import ShiWiLogo from '../../assets/ShiWiLogo2.png';
 import { Link } from 'react-router-dom';
 
@@ -15,8 +15,8 @@ function Home() {
       <LandingPage />
       <About />
       <Paths />
-      <Contact />
-      <Footer />
+      <ContactInfoDark />
+      <HomeFooter />
     </div>
   )
 }
