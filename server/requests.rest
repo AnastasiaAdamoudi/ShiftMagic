@@ -16,8 +16,8 @@ GET http://localhost:3001/auth/login
 Content-Type: application/json
 
 {
-  "username": "AnastasiaAd",
-  "password": "future_nat"
+  "username": "newAnastasia",
+  "password": "password"
 }
 
 ###

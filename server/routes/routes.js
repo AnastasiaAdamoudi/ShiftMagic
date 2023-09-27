@@ -10,7 +10,7 @@ const shiftWizardRouter = express.Router();
 
 shiftWizardRouter.get('/users', userControllers.getUsers);
 shiftWizardRouter.post('/register', userControllers.registerUser);
-shiftWizardRouter.get('/login', userControllers.loginUser);
+shiftWizardRouter.post('/login', userControllers.loginUser);
 shiftWizardRouter.post('/logout', userControllers.logoutUser);
 
 shiftWizardRouter.post('/employees', employeeControllers.createEmployee);
