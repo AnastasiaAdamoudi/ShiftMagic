@@ -3,7 +3,7 @@ import ShiWiLogo from '../../assets/ShiWiLogo2.png';
 
 function Footer() {
   return (
-    <div className='bg-tertiaryT flex flex-col items-center justify-center h-full'>
+    <div className='bg-tertiaryT flex flex-col items-center justify-center h-full bottom-0'>
       <Link to='/' className='text-center no-underline'>
         <img src={ShiWiLogo} alt='logo' className='mt-3 w-[100px] mx-auto' />
         <h3 className='text-primaryT font-title font-bold text-md'>Shift Magic</h3>

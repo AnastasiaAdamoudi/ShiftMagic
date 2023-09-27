@@ -61,31 +61,34 @@ function Contact() {
           <div className="text-center mt-10">
             <form ref={form} onSubmit={sendEmail}>
               <div className="mb-4 flex items-center">
-                <label className="text-background2 font-bold text-sm uppercase m-2">
+                {/* <label className="text-background2 font-bold text-sm uppercase m-2">
                   Name
-                </label>
+                </label> */}
                 <input
                   type="text"
+                  placeholder="Your name"
                   name="from_name"
                   className="w-full md:w-full border rounded-md py-2 px-3 text-body"
                 />
               </div>
               <div className="mb-4 flex items-center">
-                <label className="text-background2 font-bold text-sm uppercase m-2">
+                {/* <label className="text-background2 font-bold text-sm uppercase m-2">
                   Email
-                </label>
+                </label> */}
                 <input
                   type="email"
+                  placeholder="Your email address"
                   name="user_email"
                   className="w-full md:w-full border rounded-md py-2 px-3 text-body"
                 />
               </div>
               <div className="mb-4 flex items-center">
-                <label className="text-background2 font-bold text-sm uppercase m-2">
+                {/* <label className="text-background2 font-bold text-sm uppercase m-2">
                   Message
-                </label>
+                </label> */}
                 <textarea
                   name="message"
+                  placeholder="Your message"
                   className="w-full md:w-full border rounded-md py-2 px-3 text-body"
                 />
               </div>
