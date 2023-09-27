@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { CookiesProvider } from 'react-cookie';
 import Home from './components/home/home.js';
 import Auth from './components/users/auth.js';
 import CreateEmployeeForm from './components/employees/create-employee-form.js';
@@ -12,6 +13,7 @@ import Contact from './components/contact/contact.js';
 function App() {
   return (
     <div className="App">
+    <CookiesProvider>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,6 +32,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
+      </CookiesProvider>
     </div>
   );
 }

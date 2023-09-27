@@ -3,7 +3,6 @@ import Navbar from "../navbar/navbar";
 import { useState } from "react";
 import { useCookies } from "react-cookie";
 import { Link, useNavigate } from "react-router-dom";
-import ShiWiLogo from "../../assets/ShiWiLogo2.png";
 
 function Auth() {
   return (
