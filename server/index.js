@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import { shiftWizardRouter } from './routes/userRoutes.js';
+import { shiftWizardRouter } from './routes/routes.js';
 
 dotenv.config();
 

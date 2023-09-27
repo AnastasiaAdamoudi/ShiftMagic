@@ -3,25 +3,31 @@ import mongoose from "mongoose";
 const { Schema } = mongoose;
 
 const shiftSchema = new Schema({
-    numberOfDailyShifts: {
-        type: Array,
+    dayOfWeek: {
+        type: String,
         required: true,
-        minlength: 7
+        unique: true,
+        minlength: 3
+    },
+    startTime: {
+        type: Number,
+        required: true,
+        minlength: 1
+    },
+    endTime: {
+        type: Number,
+        required: true,
+        minlength: 1
     },
     numberOfHoursPerShift: {
         type: Number,
         required: true,
         minlength: 1
     },
-    numberOfWeeklyWorkingEmployees: {
+    numberOfEmployeesPerShift: {
         type: Number,
         required: true,
         minlength: 1
-    },
-    numberOfEmployeesPerDailyShift: {
-        type: Array,
-        required: true,
-        minlength: 7
     },
 });
 
